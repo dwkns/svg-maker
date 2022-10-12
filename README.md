@@ -2,6 +2,10 @@
 
 
 
+A small instant reload server to allow you to quickly prototye interactive SVG's
+
+
+
 This project assumes :
 
 - You have a reasonable knolledge of HTML & CSS.
@@ -16,53 +20,63 @@ This project assumes :
 
 ## Getting set up
 
-Open your Terminal 
-
-`Applications > Utilities > Terminal`
+### 1. Install [Homebrew](https://brew.sh) 
 
 
 
-### Install [Homebrew](https://brew.sh) 
-
-Copy/paste this command (without the `$` ) into your Terminal. 
-
-```bash
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Then follow the onscreen instructions
-
-
-
-### Install some packages
+### 2. Install some packages
 
 ``` bash
 $ brew install yarn git node@18
 ```
 
-Close that Terminal window
+**Close** that Terminal window
 
 
 
-### Install [VSCode](https://code.visualstudio.com) 
+### 3. Install [VSCode](https://code.visualstudio.com) 
 
-Visit https://code.visualstudio.com Download and Install.
+**Visit** https://code.visualstudio.com Download and Install.
 
 
 
-## Download the development enviroment
+## Configure the development enviroment
 
-Open a new Terminal window
+**Open** a new Terminal window
 
-Change directory to the Desktop
+**Change directory** to the Desktop
 
 ```bash
 $ cd ~/Desktop
 ```
 
-Clone the project
+**Clone** the project
 
 ```bash
-$ git clone 
+$ git clone https://github.com/dwkns/svg-maker.git 
 ```
+
+**Change** into that directory
+
+```bash
+$ cd svg-maker
+```
+
+**Install** dependencies
+
+``` bash
+$ yarn install
+```
+
+**Start** the server
+
+```bash
+$ yarn start
+```
+
+Visit http://localhost:8888 you should see:
+
+
+
+
 
